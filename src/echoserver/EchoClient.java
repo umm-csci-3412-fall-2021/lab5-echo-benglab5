@@ -57,12 +57,13 @@ public class EchoClient {
                     if(nextByteIn == -1){
                         break;
                     } else {
-                        System.out.print(nextByteIn);
+                        System.out.write(nextByteIn);
                     }
                 }
             } catch (IOException ioe) {
                 System.err.println(ioe);
             } finally {
+                System.out.flush();
                 sock.close();
             }
             
