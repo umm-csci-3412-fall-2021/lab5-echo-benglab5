@@ -1,5 +1,6 @@
 *.class
 !test/sampleBin/echoserver/*.class
+authtoken
 
 # Package Files #
 *.jar
